@@ -25,10 +25,16 @@ interface ItemDef {
 
 const ITEMS: ItemDef[] = [
   {
+    type: "card", tag: "Full Stack + IA", title: "TalentFlowAI",
+    description: "ATS B2B com IA copiloto, pipeline de recrutamento e portal do candidato",
+    url: "https://github.com/lcs-rg/TalentFlowAI",
+    x: 0, y: -40, startZ: -600, speed: 1.05, rotZ: -2,
+  },
+  {
     type: "card", tag: "Full Stack", title: "Vital Academia",
     description: "Site institucional para academia com aulas e planos",
     url: "https://vital-ativa-academia.vercel.app/",
-    x: 0, y: -40, startZ: -600, speed: 1.05, rotZ: -2,
+    x: -260, y: 60, startZ: -300, speed: 1.2, rotZ: 10,
   },
   {
     type: "card", tag: "IA & ML", title: "ChatBot LLM",
