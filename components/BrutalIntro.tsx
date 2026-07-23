@@ -28,40 +28,40 @@ const ITEMS: ItemDef[] = [
     type: "card", tag: "Full Stack + IA", title: "Vaga+",
     description: "Plataforma de vagas com recomendação por IA e busca inteligente",
     url: "https://vagamais.vercel.app/",
-    x: 0, y: -30, startZ: -500, speed: 1.05, rotZ: -2,
+    x: 0, y: -30, startZ: -300, speed: 1.05, rotZ: -2,
   },
   {
     type: "card", tag: "Full Stack", title: "Studio Fabiana Kence",
     description: "Sistema de agendamento para estúdio de beleza com painel admin",
     url: "https://studio-fabiana-kence-zd23.vercel.app/login",
-    x: -110, y: 25, startZ: -850, speed: 1.1, rotZ: 8,
+    x: -110, y: 25, startZ: -550, speed: 1.1, rotZ: 8,
   },
   {
     type: "card", tag: "Full Stack", title: "Vital Academia",
     description: "Site institucional para academia com aulas e planos",
     url: "https://vital-ativa-academia.vercel.app/",
-    x: 120, y: -35, startZ: -1200, speed: 1.15, rotZ: -5,
+    x: 120, y: -35, startZ: -800, speed: 1.15, rotZ: -5,
   },
   {
     type: "card", tag: "IA & ML", title: "ChatBot LLM",
     description: "Assistente conversacional com RAG e function calling",
     url: "https://github.com/seu-usuario/chatbot-llm",
-    x: -70, y: 40, startZ: -1550, speed: 1.0, rotZ: 10,
+    x: -70, y: 40, startZ: -1050, speed: 1.0, rotZ: 10,
   },
   {
     type: "card", tag: "ML & IA", title: "AI Dashboard",
     description: "Painel de analytics preditivo com machine learning",
     url: "https://github.com/seu-usuario/ai-dashboard",
-    x: 80, y: -45, startZ: -1900, speed: 1.1, rotZ: 5,
+    x: 80, y: -45, startZ: -1300, speed: 1.1, rotZ: 5,
   },
 
   // Big outline text
-  { type: "text", label: "TYPESCRIPT", x: -340, y: 280, startZ: -200, speed: 1.0, rotZ: -15 },
-  { type: "text", label: "REACT",      x: 310, y: -260, startZ: -800, speed: 0.95, rotZ: 12 },
-  { type: "text", label: "NEXT.JS",    x: 260, y: 300, startZ: -1800, speed: 0.85, rotZ: -8 },
-  { type: "text", label: "PYTHON",     x: -310, y: -300, startZ: -2200, speed: 0.8, rotZ: 20 },
-  { type: "text", label: "NODE.JS",    x: 10, y: -360, startZ: -1200, speed: 0.9, rotZ: -3 },
-  { type: "text", label: "DOCKER",     x: -190, y: 360, startZ: -2800, speed: 0.7, rotZ: 7 },
+  { type: "text", label: "DESENVOLVEDOR", x: -340, y: 280, startZ: -200, speed: 1.0, rotZ: -15 },
+  { type: "text", label: "FULL STACK",    x: 310, y: -260, startZ: -600, speed: 0.95, rotZ: 12 },
+  { type: "text", label: "BACKEND",       x: 260, y: 300, startZ: -1000, speed: 0.9, rotZ: -8 },
+  { type: "text", label: "FRONTEND",      x: -310, y: -300, startZ: -1400, speed: 0.85, rotZ: 20 },
+  { type: "text", label: "ARQUITETURA",   x: 10, y: -360, startZ: -1800, speed: 0.8, rotZ: -3 },
+  { type: "text", label: "PERFORMANCE",   x: -190, y: 360, startZ: -2200, speed: 0.75, rotZ: 7 },
 ];
 
 // ── The component ──
@@ -79,7 +79,7 @@ export function BrutalIntro() {
     if (!world) return;
 
     const proxy = document.getElementById("scroll-proxy");
-    if (proxy) proxy.style.height = "500vh";
+    if (proxy) proxy.style.height = "250vh";
 
     const ACCENT = C.primary;
 
@@ -168,7 +168,7 @@ export function BrutalIntro() {
             font-size: 10vw;
             font-weight: 900;
             color: transparent;
-            -webkit-text-stroke: 2px ${C.border};
+            -webkit-text-stroke: 2px ${C.accent};
             text-transform: uppercase;
             white-space: nowrap;
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -227,7 +227,7 @@ export function BrutalIntro() {
       const now = Date.now();
 
       // Show portfolio after scrolling 200vh worth
-      if (sy > window.innerHeight * 2 && !entered) {
+      if (sy > window.innerHeight * 1.5 && !entered) {
         entered = true;
         setEntered(true);
       }
@@ -338,7 +338,7 @@ export function BrutalIntro() {
 
       {/* Portfolio */}
       {entered && (
-        <div style={{ position: "relative", zIndex: 20, marginTop: `${window.innerHeight * 2}px` }}>
+        <div style={{ position: "relative", zIndex: 20 }}>
           <PortfolioContent />
         </div>
       )}
