@@ -25,52 +25,58 @@ interface ItemDef {
 
 const ITEMS: ItemDef[] = [
   {
-    type: "card", tag: "Full Stack + IA", title: "TalentFlowAI",
-    description: "ATS B2B com IA copiloto, pipeline de recrutamento e portal do candidato",
-    url: "https://github.com/lcs-rg/TalentFlowAI",
+    type: "card", tag: "Full Stack + IA", title: "Vaga+",
+    description: "Plataforma de vagas com recomendação por IA e busca inteligente",
+    url: "https://vagamais.vercel.app/",
     x: 0, y: -40, startZ: -600, speed: 1.05, rotZ: -2,
+  },
+  {
+    type: "card", tag: "Full Stack", title: "Studio Fabiana Kence",
+    description: "Sistema de agendamento para estúdio de beleza com painel admin",
+    url: "https://studio-fabiana-kence-zd23.vercel.app/login",
+    x: -240, y: 30, startZ: -900, speed: 1.1, rotZ: 8,
   },
   {
     type: "card", tag: "Full Stack", title: "Vital Academia",
     description: "Site institucional para academia com aulas e planos",
     url: "https://vital-ativa-academia.vercel.app/",
-    x: -260, y: 60, startZ: -300, speed: 1.2, rotZ: 10,
+    x: 220, y: -20, startZ: -1200, speed: 1.15, rotZ: -5,
   },
   {
     type: "card", tag: "IA & ML", title: "ChatBot LLM",
     description: "Assistente conversacional com RAG e function calling",
     url: "https://github.com/seu-usuario/chatbot-llm",
-    x: -260, y: 60, startZ: -300, speed: 1.2, rotZ: 10,
+    x: -260, y: 60, startZ: -1600, speed: 1.0, rotZ: 10,
   },
   {
     type: "card", tag: "Full Stack", title: "E-commerce",
     description: "Plataforma de vendas com checkout e painel admin",
     url: "https://github.com/seu-usuario/ecommerce",
-    x: -220, y: -80, startZ: -1300, speed: 1.0, rotZ: -8,
+    x: -220, y: -80, startZ: -1900, speed: 1.0, rotZ: -8,
   },
   {
     type: "card", tag: "ML & IA", title: "AI Dashboard",
     description: "Painel de analytics preditivo com machine learning",
     url: "https://github.com/seu-usuario/ai-dashboard",
-    x: 160, y: -160, startZ: -800, speed: 1.1, rotZ: 5,
+    x: 160, y: -160, startZ: -2200, speed: 1.1, rotZ: 5,
   },
   {
     type: "card", tag: "Frontend", title: "Spotify Clone",
     description: "Interface de streaming com player e playlists",
     url: "https://github.com/seu-usuario/spotify-clone",
-    x: -120, y: 180, startZ: -2000, speed: 0.9, rotZ: 3,
+    x: -120, y: 180, startZ: -2500, speed: 0.9, rotZ: 3,
   },
   {
     type: "card", tag: "UX/UI", title: "SaaS Onboarding",
     description: "Fluxo de onboarding interativo com micro-animacoes",
     url: "https://github.com/seu-usuario/saas-onboarding",
-    x: 200, y: 130, startZ: -2600, speed: 0.8, rotZ: -4,
+    x: 200, y: 130, startZ: -2800, speed: 0.8, rotZ: -4,
   },
   {
     type: "card", tag: "Backend", title: "Marketplace API",
     description: "API RESTful com autenticacao JWT e cache Redis",
     url: "https://github.com/seu-usuario/marketplace-api",
-    x: 240, y: -40, startZ: -3000, speed: 0.75, rotZ: -6,
+    x: 240, y: -40, startZ: -3100, speed: 0.75, rotZ: -6,
   },
 
   // Big outline text
