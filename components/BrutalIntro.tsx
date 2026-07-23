@@ -92,6 +92,7 @@ const ITEMS: ItemDef[] = [
 export function BrutalIntro() {
   const worldRef = useRef<HTMLDivElement>(null);
   const elsRef = useRef<HTMLDivElement[]>([]);
+  const lenisRef = useRef<Lenis | null>(null);
   const scrollY = useRef(0);
   const animFrame = useRef(0);
   const [entered, setEntered] = useState(false);
@@ -230,6 +231,7 @@ export function BrutalIntro() {
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
     });
+    lenisRef.current = lenis;
 
     lenis.on("scroll", (inst: Lenis) => {
       scrollY.current = inst.animatedScroll;
@@ -314,9 +316,19 @@ export function BrutalIntro() {
 
     return () => {
       lenis.destroy();
+      lenisRef.current = null;
       if (animFrame.current) cancelAnimationFrame(animFrame.current);
     };
   }, []);
+
+  // Recalculate Lenis bounds when portfolio section renders
+  useEffect(() => {
+    if (entered && lenisRef.current) {
+      requestAnimationFrame(() => {
+        lenisRef.current?.resize();
+      });
+    }
+  }, [entered]);
 
   return (
     <>
