@@ -28,31 +28,31 @@ const ITEMS: ItemDef[] = [
     type: "card", tag: "Full Stack + IA", title: "Vaga+",
     description: "Plataforma de vagas com recomendação por IA e busca inteligente",
     url: "https://vagamais.vercel.app/",
-    x: 0, y: -30, startZ: -300, speed: 1.05, rotZ: -2,
+    x: 10, y: -80, startZ: -300, speed: 1.05, rotZ: -2,
   },
   {
     type: "card", tag: "Full Stack", title: "Studio Fabiana Kence",
     description: "Sistema de agendamento para estúdio de beleza com painel admin",
     url: "https://studio-fabiana-kence-zd23.vercel.app/login",
-    x: -110, y: 25, startZ: -550, speed: 1.1, rotZ: 8,
+    x: -195, y: -15, startZ: -550, speed: 1.1, rotZ: 8,
   },
   {
     type: "card", tag: "Full Stack", title: "Vital Academia",
     description: "Site institucional para academia com aulas e planos",
     url: "https://vital-ativa-academia.vercel.app/",
-    x: 120, y: -35, startZ: -800, speed: 1.15, rotZ: -5,
+    x: 185, y: 55, startZ: -800, speed: 1.15, rotZ: -5,
   },
   {
     type: "card", tag: "IA & ML", title: "ChatBot LLM",
     description: "Assistente conversacional com RAG e function calling",
     url: "https://github.com/seu-usuario/chatbot-llm",
-    x: -70, y: 40, startZ: -1050, speed: 1.0, rotZ: 10,
+    x: -140, y: -130, startZ: -1050, speed: 1.0, rotZ: 10,
   },
   {
     type: "card", tag: "ML & IA", title: "AI Dashboard",
     description: "Painel de analytics preditivo com machine learning",
     url: "https://github.com/seu-usuario/ai-dashboard",
-    x: 80, y: -45, startZ: -1300, speed: 1.1, rotZ: 5,
+    x: 110, y: 125, startZ: -1300, speed: 1.1, rotZ: 5,
   },
 
   // Big outline text
@@ -168,7 +168,7 @@ export function BrutalIntro() {
             font-size: 10vw;
             font-weight: 900;
             color: transparent;
-            -webkit-text-stroke: 2px ${C.accent};
+            -webkit-text-stroke: 2px ${C.border};
             text-transform: uppercase;
             white-space: nowrap;
             font-family: 'Helvetica Neue', Arial, sans-serif;
