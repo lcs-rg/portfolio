@@ -7,6 +7,7 @@ import { Projects } from "@/components/Projects";
 import { Education } from "@/components/Education";
 import { Contact, Footer } from "@/components/Contact";
 import { Motion } from "@/components/Motion";
+import { SectionDivider } from "@/components/SectionDivider";
 
 export default function Home() {
   return (
@@ -15,14 +16,16 @@ export default function Home() {
       <Motion />
       <main className="relative">
         <Hero />
-        <div aria-hidden className="mx-auto max-w-3xl px-6">
-          <div className="h-px bg-line" />
-        </div>
+        <SectionDivider index="01" label="Sobre" />
         <About />
+        <SectionDivider index="02" label="Stack" reverse />
         <Stack />
+        <SectionDivider index="03" label="Experiência" />
         <Experience />
+        <SectionDivider index="04" label="Projetos" reverse />
         <Projects />
         <Education />
+        <SectionDivider index="05" label="Contato" />
         <Contact />
       </main>
       <Footer />
