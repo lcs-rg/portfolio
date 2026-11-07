@@ -7,22 +7,22 @@ export function Experience() {
       <h2 className="max-w-xl text-3xl font-semibold leading-snug tracking-[-0.02em] sm:text-4xl">
         Da mais recente para a mais antiga — o desfecho primeiro.
       </h2>
-      <ol className="mt-14 relative">
-        {experience.map((job, index) => (
-          <li
-            key={job.company}
-            className="relative pb-14 pl-10 last:pb-0 sm:pl-2"
-          >
+      <ol className="relative mt-14">
+        <span
+          aria-hidden
+          className="absolute bottom-1 left-[11px] top-1 w-px bg-line sm:left-[19px]"
+        >
+          <span
+            id="exp-rail"
+            className="block h-full w-full bg-gradient-to-b from-glow via-glow-soft to-glow"
+          />
+        </span>
+        {experience.map((job) => (
+          <li key={job.company} className="relative pb-14 pl-10 last:pb-0 sm:pl-2">
             <span
               aria-hidden
               className="absolute left-[5px] top-1.5 h-3 w-3 rounded-full bg-glow shadow-[0_0_12px_rgba(139,92,246,0.8)] sm:left-[13px]"
             />
-            {index < experience.length - 1 ? (
-              <span
-                aria-hidden
-                className="absolute left-[11px] top-5 bottom-0 w-px bg-line sm:left-[19px]"
-              />
-            ) : null}
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
               {job.period}
             </p>
