@@ -71,7 +71,7 @@ export function HeroCluster() {
           data-cluster-card
           className="absolute left-0 top-0 w-56 [transform:translateZ(60px)_rotate(-4deg)]"
         >
-          <div className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur">
+          <div className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(0,26,92,0.4)] backdrop-blur">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
@@ -97,7 +97,7 @@ export function HeroCluster() {
           className="absolute right-0 top-32 w-48 [transform:translateZ(30px)_rotate(3deg)]"
         >
           <div
-            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur"
+            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(0,26,92,0.4)] backdrop-blur"
             style={{ animationDelay: "-2.4s" }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
@@ -125,7 +125,7 @@ export function HeroCluster() {
           className="absolute bottom-0 left-4 w-64 [transform:translateZ(45px)_rotate(-1deg)]"
         >
           <div
-            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur"
+            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(0,26,92,0.4)] backdrop-blur"
             style={{ animationDelay: "-4.8s" }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
@@ -149,7 +149,7 @@ export function HeroCluster() {
           className="absolute right-3 top-2 [transform:translateZ(80px)_rotate(5deg)]"
         >
           <div
-            className="cluster-float rounded-full border border-accent/40 bg-canvas/90 px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-soft shadow-[0_16px_40px_-16px_rgba(252,59,127,0.6)] backdrop-blur"
+            className="cluster-float rounded-full border border-accent/40 bg-canvas/90 px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-soft shadow-[0_16px_40px_-16px_rgba(0,26,92,0.5)] backdrop-blur"
             style={{ animationDelay: "-1.2s", animationDuration: "5.6s" }}
           >
             Computer Vision · Retail Execution

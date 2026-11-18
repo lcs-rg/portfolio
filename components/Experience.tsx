@@ -148,12 +148,12 @@ export function Experience() {
         <div
           data-parallax="a"
           className="absolute -right-32 -top-16 h-72 w-72 rounded-full opacity-80"
-          style={CLOUD_STYLE("rgba(252,59,127,0.4)", "13px 13px")}
+          style={CLOUD_STYLE("rgba(0,50,168,0.35)", "13px 13px")}
         />
         <div
           data-parallax="b"
           className="absolute -bottom-24 -left-40 h-96 w-96 rounded-full opacity-60"
-          style={CLOUD_STYLE("rgba(167,139,250,0.3)", "18px 18px")}
+          style={CLOUD_STYLE("rgba(0,50,168,0.22)", "18px 18px")}
         />
       </div>
       <p className="eyebrow mb-3">Experiência.</p>
@@ -169,8 +169,8 @@ export function Experience() {
         >
           <defs>
             <linearGradient id="rope-grad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#ff7bab" />
-              <stop offset="100%" stopColor="#fc3b7f" />
+              <stop offset="0%" stopColor="#2e5be8" />
+              <stop offset="100%" stopColor="#0032a8" />
             </linearGradient>
           </defs>
           <path
@@ -188,7 +188,7 @@ export function Experience() {
               <span
                 aria-hidden
                 data-dot
-                className="absolute left-[5px] top-1.5 z-10 h-3 w-3 rounded-full bg-accent shadow-[0_0_12px_rgba(252,59,127,0.8)] sm:left-[13px]"
+                className="absolute left-[5px] top-1.5 z-10 h-3 w-3 rounded-full bg-accent shadow-[0_0_12px_rgba(0,50,168,0.8)] sm:left-[13px]"
               />
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
                 {job.period}

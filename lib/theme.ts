@@ -1,20 +1,20 @@
 export const theme = {
   colors: {
-    bg:       "#001238",
-    card:     "#0A1C55",
-    card2:    "#0F2568",
-    primary:  "#FC3B7F",
-    accent:   "#FF7BAB",
-    text:     "#FEF1CF",
-    muted:    "rgba(254, 241, 207, 0.62)",
-    border:   "rgba(254, 241, 207, 0.14)",
+    bg:       "#FC3B7F",
+    card:     "#FEF1CF",
+    card2:    "#FBE4B4",
+    primary:  "#0032A8",
+    accent:   "#2E5BE8",
+    text:     "#001A5C",
+    muted:    "rgba(0, 26, 92, 0.66)",
+    border:   "rgba(0, 26, 92, 0.16)",
   },
   cssVars: {
-    "--color-bg":      "#001238",
-    "--color-card":    "#0A1C55",
-    "--color-primary": "#FC3B7F",
-    "--color-accent":  "#FF7BAB",
-    "--color-text":    "#FEF1CF",
+    "--color-bg":      "#FC3B7F",
+    "--color-card":    "#FEF1CF",
+    "--color-primary": "#0032A8",
+    "--color-accent":  "#2E5BE8",
+    "--color-text":    "#001A5C",
   },
 } as const;
 

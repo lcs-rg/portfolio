@@ -18,7 +18,7 @@ export function useLiftCards(rootRef: RefObject<HTMLElement | null>) {
           const enter = () => {
             gsap.to(el, {
               y: -6,
-              boxShadow: "0 24px 48px -24px rgba(139,92,246,0.45)",
+              boxShadow: "0 24px 48px -24px rgba(0,50,168,0.45)",
               duration: 0.45,
               ease: "power3.out",
               overwrite: "auto",
@@ -27,7 +27,7 @@ export function useLiftCards(rootRef: RefObject<HTMLElement | null>) {
           const leave = () => {
             gsap.to(el, {
               y: 0,
-              boxShadow: "0 0px 0px 0px rgba(139,92,246,0)",
+              boxShadow: "0 0px 0px 0px rgba(0,50,168,0)",
               duration: 0.7,
               ease: "elastic.out(1, 1.2)",
               overwrite: "auto",

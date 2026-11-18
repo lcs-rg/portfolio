@@ -12,7 +12,7 @@ export function Hero() {
         className="pointer-events-none absolute left-1/2 top-[-20%] h-[60vh] w-[80vw] -translate-x-1/2 rounded-full opacity-60 blur-[120px]"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(252,59,127,0.22), transparent 70%)",
+            "radial-gradient(closest-side, rgba(0,50,168,0.18), transparent 70%)",
         }}
       />
       <div className="relative mx-auto grid w-full max-w-5xl items-center gap-16 px-6 py-32 lg:grid-cols-[1.05fr_0.95fr]">
@@ -47,7 +47,7 @@ export function Hero() {
           >
             <a
               href="#projetos"
-              className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-accent-soft"
+              className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-surface transition-colors hover:bg-accent-soft"
             >
               Ver projetos
             </a>

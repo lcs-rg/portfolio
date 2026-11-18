@@ -28,7 +28,7 @@ export function Projects() {
         <div
           data-parallax="b"
           className="absolute -right-28 top-1/3 h-80 w-80 rounded-full opacity-60"
-          style={CLOUD_STYLE("rgba(252,59,127,0.35)", "16px 16px")}
+          style={CLOUD_STYLE("rgba(0,50,168,0.3)", "16px 16px")}
         />
       </div>
       <p className="eyebrow mb-3">{projects.heading}.</p>
