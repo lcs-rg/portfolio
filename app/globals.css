@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-canvas: #0b0f19;
-  --color-surface: #161b26;
-  --color-surface2: #1c2333;
-  --color-line: rgba(148, 163, 184, 0.14);
-  --color-line-strong: rgba(148, 163, 184, 0.28);
-  --color-ink: #f1f5f9;
-  --color-mute: #9aa5b8;
-  --color-glow: #8b5cf6;
-  --color-glow-soft: #a78bfa;
-  --color-glow-dim: rgba(139, 92, 246, 0.14);
+  --color-canvas: #001238;
+  --color-surface: #0a1c55;
+  --color-surface2: #0f2568;
+  --color-line: rgba(254, 241, 207, 0.14);
+  --color-line-strong: rgba(254, 241, 207, 0.28);
+  --color-ink: #fef1cf;
+  --color-mute: rgba(254, 241, 207, 0.62);
+  --color-accent: #fc3b7f;
+  --color-accent-soft: #ff7bab;
+  --color-accent-dim: rgba(252, 59, 127, 0.14);
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
@@ -36,12 +36,12 @@ summary {
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(252, 59, 127, 0.35);
   color: var(--color-ink);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-glow);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -53,8 +53,8 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(139, 92, 246, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(252, 59, 127, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(252, 59, 127, 0.05) 1px, transparent 1px);
   background-size: 44px 44px;
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 78%);
   mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 78%);
@@ -75,11 +75,11 @@ body::after {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-glow-soft);
+  color: var(--color-accent-soft);
 }
 
-.text-gradient-violet {
-  background: linear-gradient(120deg, #a78bfa 10%, #8b5cf6 50%, #6d4bd8 90%);
+.text-gradient-accent {
+  background: linear-gradient(120deg, #ff7bab 10%, #fc3b7f 50%, #d91f63 90%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

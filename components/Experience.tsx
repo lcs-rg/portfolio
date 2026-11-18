@@ -148,7 +148,7 @@ export function Experience() {
         <div
           data-parallax="a"
           className="absolute -right-32 -top-16 h-72 w-72 rounded-full opacity-80"
-          style={CLOUD_STYLE("rgba(139,92,246,0.4)", "13px 13px")}
+          style={CLOUD_STYLE("rgba(252,59,127,0.4)", "13px 13px")}
         />
         <div
           data-parallax="b"
@@ -169,8 +169,8 @@ export function Experience() {
         >
           <defs>
             <linearGradient id="rope-grad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#a78bfa" />
-              <stop offset="100%" stopColor="#8b5cf6" />
+              <stop offset="0%" stopColor="#ff7bab" />
+              <stop offset="100%" stopColor="#fc3b7f" />
             </linearGradient>
           </defs>
           <path
@@ -188,7 +188,7 @@ export function Experience() {
               <span
                 aria-hidden
                 data-dot
-                className="absolute left-[5px] top-1.5 z-10 h-3 w-3 rounded-full bg-glow shadow-[0_0_12px_rgba(139,92,246,0.8)] sm:left-[13px]"
+                className="absolute left-[5px] top-1.5 z-10 h-3 w-3 rounded-full bg-accent shadow-[0_0_12px_rgba(252,59,127,0.8)] sm:left-[13px]"
               />
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
                 {job.period}
@@ -202,7 +202,7 @@ export function Experience() {
                     <span className="block text-lg font-semibold tracking-[-0.01em]">
                       {job.company}
                     </span>
-                    <span className="mt-0.5 block text-sm text-glow-soft">
+                    <span className="mt-0.5 block text-sm text-accent-soft">
                       {job.role}
                     </span>
                   </span>
@@ -226,7 +226,7 @@ export function Experience() {
                         >
                           <span
                             aria-hidden
-                            className="mt-2 h-1 w-1 shrink-0 rounded-full bg-glow"
+                            className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent"
                           />
                           {highlight}
                         </li>
@@ -246,9 +246,9 @@ export function Experience() {
                       {job.metrics.map((metric) => (
                         <div
                           key={metric.label}
-                          className="rounded-lg bg-glow-dim px-4 py-3"
+                          className="rounded-lg bg-accent-dim px-4 py-3"
                         >
-                          <dt className="text-xl font-bold text-glow-soft">
+                          <dt className="text-xl font-bold text-accent-soft">
                             {metric.value}
                           </dt>
                           <dd className="mt-1 text-xs leading-snug text-mute">

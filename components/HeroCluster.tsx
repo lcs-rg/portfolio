@@ -71,9 +71,9 @@ export function HeroCluster() {
           data-cluster-card
           className="absolute left-0 top-0 w-56 [transform:translateZ(60px)_rotate(-4deg)]"
         >
-          <div className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(139,92,246,0.45)] backdrop-blur">
+          <div className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur">
             <div className="flex items-center gap-2">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-glow" />
+              <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
                 wincorce-assistant
               </span>
@@ -82,7 +82,7 @@ export function HeroCluster() {
               <p className="rounded-lg border border-line bg-canvas px-3 py-2 text-xs text-mute">
                 Como está a auditoria da rota?
               </p>
-              <p className="rounded-lg bg-glow-dim px-3 py-2 text-xs text-glow-soft">
+              <p className="rounded-lg bg-accent-dim px-3 py-2 text-xs text-accent-soft">
                 3 gôndolas auditadas · confiança 97%
               </p>
             </div>
@@ -97,7 +97,7 @@ export function HeroCluster() {
           className="absolute right-0 top-32 w-48 [transform:translateZ(30px)_rotate(3deg)]"
         >
           <div
-            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(139,92,246,0.45)] backdrop-blur"
+            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur"
             style={{ animationDelay: "-2.4s" }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
@@ -105,13 +105,13 @@ export function HeroCluster() {
             </p>
             <dl className="mt-3 space-y-2.5">
               <div>
-                <dt className="text-lg font-bold text-glow-soft">1.700+</dt>
+                <dt className="text-lg font-bold text-accent-soft">1.700+</dt>
                 <dd className="text-[11px] leading-tight text-mute">
                   unidades na plataforma
                 </dd>
               </div>
               <div>
-                <dt className="text-lg font-bold text-glow-soft">~65.000</dt>
+                <dt className="text-lg font-bold text-accent-soft">~65.000</dt>
                 <dd className="text-[11px] leading-tight text-mute">
                   consultas de IA / mês
                 </dd>
@@ -125,7 +125,7 @@ export function HeroCluster() {
           className="absolute bottom-0 left-4 w-64 [transform:translateZ(45px)_rotate(-1deg)]"
         >
           <div
-            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(139,92,246,0.45)] backdrop-blur"
+            className="cluster-float rounded-xl border border-line bg-surface/90 p-4 shadow-[0_28px_60px_-28px_rgba(252,59,127,0.45)] backdrop-blur"
             style={{ animationDelay: "-4.8s" }}
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
@@ -149,7 +149,7 @@ export function HeroCluster() {
           className="absolute right-3 top-2 [transform:translateZ(80px)_rotate(5deg)]"
         >
           <div
-            className="cluster-float rounded-full border border-glow/40 bg-canvas/90 px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-glow-soft shadow-[0_16px_40px_-16px_rgba(139,92,246,0.6)] backdrop-blur"
+            className="cluster-float rounded-full border border-accent/40 bg-canvas/90 px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-soft shadow-[0_16px_40px_-16px_rgba(252,59,127,0.6)] backdrop-blur"
             style={{ animationDelay: "-1.2s", animationDuration: "5.6s" }}
           >
             Computer Vision · Retail Execution

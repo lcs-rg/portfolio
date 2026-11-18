@@ -21,7 +21,7 @@ export function Education() {
             </h3>
             <p className="mt-1 text-sm text-mute">{entry.school}</p>
             {entry.detail ? (
-              <p className="mt-3 text-sm text-glow-soft">{entry.detail}</p>
+              <p className="mt-3 text-sm text-accent-soft">{entry.detail}</p>
             ) : null}
           </article>
         ))}

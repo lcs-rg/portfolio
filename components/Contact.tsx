@@ -9,7 +9,7 @@ export function Contact() {
       </h2>
       <a
         href={`mailto:${links.email}`}
-        className="mt-8 inline-block text-2xl font-semibold tracking-[-0.02em] text-glow-soft underline-offset-4 hover:underline sm:text-3xl"
+        className="mt-8 inline-block text-2xl font-semibold tracking-[-0.02em] text-accent-soft underline-offset-4 hover:underline sm:text-3xl"
       >
         {links.email}
       </a>
@@ -17,7 +17,7 @@ export function Contact() {
         <li>
           <a
             href={links.phoneHref}
-            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-glow/60"
+            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-accent/60"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-mute">
               Telefone
@@ -30,7 +30,7 @@ export function Contact() {
             href={links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-glow/60"
+            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-accent/60"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-mute">
               LinkedIn
@@ -43,7 +43,7 @@ export function Contact() {
             href={links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-glow/60"
+            className="block rounded-xl border border-line bg-surface px-5 py-4 transition-colors hover:border-accent/60"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-mute">
               GitHub
@@ -66,7 +66,7 @@ export function Footer() {
         <a
           href={identity.cvFile}
           download
-          className="font-mono text-xs uppercase tracking-[0.14em] text-glow-soft underline-offset-4 hover:underline"
+          className="font-mono text-xs uppercase tracking-[0.14em] text-accent-soft underline-offset-4 hover:underline"
         >
           Currículo em PDF
         </a>

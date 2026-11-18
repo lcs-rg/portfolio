@@ -12,7 +12,7 @@ export function Hero() {
         className="pointer-events-none absolute left-1/2 top-[-20%] h-[60vh] w-[80vw] -translate-x-1/2 rounded-full opacity-60 blur-[120px]"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(139,92,246,0.22), transparent 70%)",
+            "radial-gradient(closest-side, rgba(252,59,127,0.22), transparent 70%)",
         }}
       />
       <div className="relative mx-auto grid w-full max-w-5xl items-center gap-16 px-6 py-32 lg:grid-cols-[1.05fr_0.95fr]">
@@ -25,13 +25,13 @@ export function Hero() {
             className="text-5xl font-bold leading-[1.05] tracking-[-0.03em] sm:text-7xl"
           >
             {identity.heroHeadline.split(" ")[0]}{" "}
-            <span className="text-gradient-violet">
+            <span className="text-gradient-accent">
               {identity.heroHeadline.split(" ")[1]}
             </span>
           </h1>
           <p
             data-motion="hero-item"
-            className="mt-4 font-mono text-sm uppercase tracking-[0.18em] text-glow-soft"
+            className="mt-4 font-mono text-sm uppercase tracking-[0.18em] text-accent-soft"
           >
             {identity.title}
           </p>
@@ -47,14 +47,14 @@ export function Hero() {
           >
             <a
               href="#projetos"
-              className="rounded-lg bg-glow px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-glow-soft"
+              className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-accent-soft"
             >
               Ver projetos
             </a>
             <a
               href={identity.cvFile}
               download
-              className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-mute transition-colors hover:border-glow hover:text-ink"
+              className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-mute transition-colors hover:border-accent hover:text-ink"
             >
               Baixar currículo
             </a>

@@ -21,7 +21,7 @@ export function About() {
       <div className="mt-12 flex flex-wrap gap-6 text-sm">
         <a
           href={`mailto:${links.email}`}
-          className="text-glow-soft underline-offset-4 hover:underline"
+          className="text-accent-soft underline-offset-4 hover:underline"
         >
           {links.email}
         </a>

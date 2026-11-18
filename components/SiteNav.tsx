@@ -17,7 +17,7 @@ export function SiteNav() {
     <>
       <a
         href="#sobre"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-glow focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-ink"
       >
         Pular para o conteúdo
       </a>
@@ -30,7 +30,7 @@ export function SiteNav() {
     >
       <nav className="mx-auto flex h-16 max-w-3xl items-center justify-between px-6">
         <a href="#top" className="font-mono text-sm font-semibold tracking-tight">
-          LG<span className="text-glow-soft">.</span>
+          LG<span className="text-accent-soft">.</span>
         </a>
         <ul className="flex items-center gap-5 overflow-x-auto sm:gap-6 [&::-webkit-scrollbar]:hidden">
           {navItems.map((item) => (
@@ -47,7 +47,7 @@ export function SiteNav() {
         <a
           href="/lucas-guerra-cv.pdf"
           download
-          className="rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-mute transition-colors hover:border-glow hover:text-glow-soft sm:text-[11px]"
+          className="rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-mute transition-colors hover:border-accent hover:text-accent-soft sm:text-[11px]"
         >
           CV
         </a>

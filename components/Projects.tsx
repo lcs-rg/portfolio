@@ -28,7 +28,7 @@ export function Projects() {
         <div
           data-parallax="b"
           className="absolute -right-28 top-1/3 h-80 w-80 rounded-full opacity-60"
-          style={CLOUD_STYLE("rgba(139,92,246,0.35)", "16px 16px")}
+          style={CLOUD_STYLE("rgba(252,59,127,0.35)", "16px 16px")}
         />
       </div>
       <p className="eyebrow mb-3">{projects.heading}.</p>
@@ -44,10 +44,10 @@ export function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             data-lift
-            className="group flex flex-col rounded-xl border border-line bg-surface p-6 transition-colors hover:border-glow/60"
+            className="group flex flex-col rounded-xl border border-line bg-surface p-6 transition-colors hover:border-accent/60"
           >
             <div className="flex items-center justify-between gap-3">
-              <span className="rounded-md border border-glow/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-glow-soft">
+              <span className="rounded-md border border-accent/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-soft">
                 {project.tag}
               </span>
               <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-mute">
@@ -60,7 +60,7 @@ export function Projects() {
             <p className="mt-2 text-sm leading-relaxed text-mute">
               {project.description}
             </p>
-            <span className="mt-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-glow-soft opacity-70 transition-opacity group-hover:opacity-100">
+            <span className="mt-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-accent-soft opacity-70 transition-opacity group-hover:opacity-100">
               Visitar
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
                 →
